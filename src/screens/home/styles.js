@@ -17,7 +17,7 @@ export const ToolBar = styled.View`
     align-content: space-between;
     justify-content: center;
     align-items: center;
-    background-color: ${colors.primary};
+    background-color: ${colors.darkRed};
     border-bottom-width: 1px;
     border-bottom-color: ${colors.light};
 `;
