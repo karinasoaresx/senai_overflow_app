@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 import colors from "../../styles/colors";
 import { StatusBar } from "react-native";
 import { TextDefault } from "../../styles/stylesGlobal"
+import Icon from "react-native-vector-icons/FontAwesome";
 
 export const Container = styled.View`
     flex: 1;
@@ -20,6 +21,7 @@ export const ToolBar = styled.View`
     background-color: ${colors.darkRed};
     border-bottom-width: 1px;
     border-bottom-color: ${colors.light};
+    z-index: 9;
 `;
 
 export const TextToolBar = styled(TextDefault)`
@@ -28,4 +30,23 @@ export const TextToolBar = styled(TextDefault)`
     color: ${colors.light};
     font-weight: bold;
     text-align: center;
+`;
+
+export const IconSignOut = styled(Icon)`
+    font-size: 25px;
+    color: ${colors.light};
+`;
+
+export const ImageLogo = styled.Image`
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border-color: ${colors.light};
+    margin-top: 20px;
+    z-index: 9;
+`;
+
+export const LoadingFeed = styled.ActivityIndicator`
+    position: absolute;
+    bottom: 4px;
 `;
